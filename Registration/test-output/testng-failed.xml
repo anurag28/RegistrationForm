@@ -6,7 +6,8 @@
       <class name="tests.RegistrationTest">
         <methods>
           <include name="beforeTest"/>
-          <include name="validateSuccessMessageForValidForm"/>
+          <include name="afterTest"/>
+          <include name="tc02_validateClearButton"/>
         </methods>
       </class> <!-- tests.RegistrationTest -->
     </classes>

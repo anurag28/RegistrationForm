@@ -1,7 +1,12 @@
-valid_registration_form:
+valid_registration_form_data:
   name: "John Doe"
   phone_number: "0987654321"
   email_address: "jdoe@john.com"
-  userId: "jdoe12"
+  user_id: "jdoe12"
   password: "jdoe@123Doe"
   success_msg: "Form submitted successfully!"
+invalid_email: "abc"
+invalid_email_validation_msg: "Please include an '@' in the email address. 'abc' is missing an '@'."
+invalid_data_error_msg: "Please match the requested format."
+empty_field_error_msg: "Please fill out this field."
+  
