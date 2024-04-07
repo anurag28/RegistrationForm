@@ -1,0 +1,7 @@
+valid_registration_form:
+  name: "John Doe"
+  phone_number: "0987654321"
+  email_address: "jdoe@john.com"
+  userId: "jdoe12"
+  password: "jdoe@123Doe"
+  success_msg: "Form submitted successfully!"

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0148)file:///C:/Users/RBU_LU~1/AppData/Local/Temp/%7B49C7038F-264D-4A7E-B5AD-8FCDC43843DC%7D/%7B774945A8-A316-489E-8AFE-2E3659DED02E%7D/Registration.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  .mandatory::after {
+    content: "*";
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form id="registrationForm" action="file:///C:/Users/RBU_LU~1/AppData/Local/Temp/%7B49C7038F-264D-4A7E-B5AD-8FCDC43843DC%7D/%7B774945A8-A316-489E-8AFE-2E3659DED02E%7D/Registration.html#" method="post">
+  <div>
+    <label for="name">Name<span class="mandatory" aria-hidden="true">*</span>:</label>
+    <input type="text" id="name" name="name" pattern="[A-Za-z\s]{3,25}" required="">
+    <small>Minimum 3 and maximum 25 characters, no special characters allowed</small>
+  </div>
+  <div>
+    <label for="phoneNumber">Phone Number<span class="mandatory" aria-hidden="true">*</span>:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" pattern="^(0|\+)[0-9]{8,13}$" required="">
+    <small>Start with 0 or + followed by 8 to 13 digits</small>
+  </div>
+  <div>
+    <label for="email">Email Address<span class="mandatory" aria-hidden="true">*</span>:</label>
+    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required="">
+    <small>Example: example@example.com</small>
+  </div>
+  <div>
+    <label for="userID">UserID<span class="mandatory" aria-hidden="true">*</span>:</label>
+    <input type="text" id="userID" name="userID" minlength="5" maxlength="8" required="">
+    <small>Minimum 5 and maximum 8 characters</small>
+  </div>
+  <div>
+    <label for="password">Password<span class="mandatory" aria-hidden="true">*</span>:</label>
+    <input type="password" id="password" name="password" minlength="4" maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{4,10}" required="">
+    <small>Minimum 4 and maximum 10 characters, at least one special character, one capital letter</small>
+  </div>
+  <br><br>
+  <div>
+    <button type="submit">Submit</button>
+    <button type="button" onclick="cancelRegistration()">Cancel</button>
+	  <br><br>
+    <button type="button" onclick="clearForm()">Clear</button>
+  </div>
+</form>
+
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(event){
+  event.preventDefault(); // Prevent form submission
+  // Logic to submit the form data goes here
+  alert("Form submitted successfully!");
+});
+
+function cancelRegistration() {
+  // Prompt user for confirmation
+  if (confirm("Are you sure you want to cancel?")) {
+    // Clear the form
+    clearForm();
+    // You can add logic here to handle further actions after cancellation
+    alert("Registration cancelled!");
+  }
+}
+
+
+function clearForm() {
+if (confirm("Are you sure you want to clear Form?")) {
+    // Clear the form
+  document.getElementById("registrationForm").reset();
+  }
+}
+</script>
+
+
+
+</body></html>
