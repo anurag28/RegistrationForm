@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-07T15:46:38 CEST" name="Default suite" finished-at="2024-04-07T15:46:44 CEST" duration-ms="5740">
+  <suite started-at="2024-04-09T18:57:46 CEST" name="Default suite" finished-at="2024-04-09T18:57:55 CEST" duration-ms="8881">
     <groups>
     </groups>
-    <test started-at="2024-04-07T15:46:38 CEST" name="Default test" finished-at="2024-04-07T15:46:44 CEST" duration-ms="5740">
+    <test started-at="2024-04-09T18:57:46 CEST" name="Default test" finished-at="2024-04-09T18:57:55 CEST" duration-ms="8881">
       <class name="tests.RegistrationTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-07T15:46:38 CEST" name="beforeTest" finished-at="2024-04-07T15:46:41 CEST" duration-ms="3095" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-09T18:57:46 CEST" name="beforeTest" finished-at="2024-04-09T18:57:51 CEST" duration-ms="5292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="tc01_validateClearButton()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-07T15:46:41 CEST" name="tc01_validateClearButton" finished-at="2024-04-07T15:46:42 CEST" duration-ms="725" status="PASS">
+        <test-method signature="tc01_validateClearButton()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-09T18:57:52 CEST" name="tc01_validateClearButton" finished-at="2024-04-09T18:57:52 CEST" duration-ms="796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_validateClearButton -->
-        <test-method signature="tc02_validateInvalidEmailValidationMsg()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-07T15:46:42 CEST" name="tc02_validateInvalidEmailValidationMsg" finished-at="2024-04-07T15:46:42 CEST" duration-ms="802" status="PASS">
+        <test-method signature="tc02_validateInvalidEmailValidationMsg()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-09T18:57:52 CEST" name="tc02_validateInvalidEmailValidationMsg" finished-at="2024-04-09T18:57:53 CEST" duration-ms="1044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc02_validateInvalidEmailValidationMsg -->
-        <test-method signature="tc03_validatePasswordFieldIsMasked()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-07T15:46:43 CEST" name="tc03_validatePasswordFieldIsMasked" finished-at="2024-04-07T15:46:43 CEST" duration-ms="60" status="PASS">
+        <test-method signature="tc03_validatePasswordFieldIsMasked()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-09T18:57:53 CEST" name="tc03_validatePasswordFieldIsMasked" finished-at="2024-04-09T18:57:54 CEST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc03_validatePasswordFieldIsMasked -->
-        <test-method signature="tc04_validateSuccessMessageForValidForm()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-07T15:46:43 CEST" name="tc04_validateSuccessMessageForValidForm" finished-at="2024-04-07T15:46:43 CEST" duration-ms="720" status="PASS">
+        <test-method signature="tc04_validateSuccessMessageForValidForm()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-09T18:57:54 CEST" name="tc04_validateSuccessMessageForValidForm" finished-at="2024-04-09T18:57:55 CEST" duration-ms="1213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc04_validateSuccessMessageForValidForm -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-07T15:46:43 CEST" name="afterTest" finished-at="2024-04-07T15:46:44 CEST" duration-ms="224" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.RegistrationTest@cecf639]" started-at="2024-04-09T18:57:55 CEST" name="afterTest" finished-at="2024-04-09T18:57:55 CEST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
