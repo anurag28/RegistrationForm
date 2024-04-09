@@ -7,8 +7,11 @@ To trigger all the tests, run the following command in the repository:
 mvn clean test
 ```
 
+## Accessing Test Report
+To access the test report, navigate to `test-output > emailable-report.html`.
+
 ## Theory Questions
-- theory_questions.txt
+Find the theory questions in the `theory_questions.txt` file.
 
 ## Manual Practical Tests
 - Manual Practical Tests_Question 1.pdf
@@ -19,4 +22,4 @@ mvn clean test
 - Test Strategy.pdf
 ```
 
-This README.md file provides instructions for running tests, accessing theory questions, and finding manual practical tests and test documents.
+This README.md file provides instructions for running tests, accessing the test report, finding theory questions, and accessing manual practical tests and test documents.
