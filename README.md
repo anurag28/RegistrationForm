@@ -20,6 +20,7 @@ Find the theory questions in the `theory_questions.txt` file.
 ## Test Documents
 - Test Plan.pdf
 - Test Strategy.pdf
+- Sample defect report.pdf
 ```
 
 This README.md file provides instructions for running tests, accessing the test report, finding theory questions, and accessing manual practical tests and test documents.
