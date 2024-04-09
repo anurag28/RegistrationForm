@@ -8,9 +8,9 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-	String filePath = System.getProperty("user.dir") + File.separator + "config.properties";
+	static String filePath = System.getProperty("user.dir") + File.separator + "config.properties";
 	
-	public String getUrl() throws FileNotFoundException, IOException {
+	public static String getUrl() throws FileNotFoundException, IOException {
 		Properties prop = new Properties();
 
 	    prop.load(new FileInputStream(filePath));
@@ -20,7 +20,7 @@ public class ConfigReader {
 	    return "file://" + File.separator +System.getProperty("user.dir")+ File.separator + fileName;
 	}
 	
-	public String getProperty(String property) throws FileNotFoundException, IOException {
+	public static String getProperty(String property) throws FileNotFoundException, IOException {
 		Properties prop = new Properties();
 
 		prop.load(new FileInputStream(filePath));

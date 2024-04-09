@@ -5,9 +5,13 @@
     <classes>
       <class name="tests.RegistrationTest">
         <methods>
+          <include name="tc04_validateSuccessMessageForValidForm"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="tc02_validateInvalidEmailValidationMsg"/>
+          <include name="beforeMethod"/>
           <include name="afterTest"/>
-          <include name="tc02_validateClearButton"/>
+          <include name="tc03_validatePasswordFieldIsMasked"/>
         </methods>
       </class> <!-- tests.RegistrationTest -->
     </classes>

@@ -5,41 +5,35 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import objects.RegistrationPage;
 import steps.RegistrationSteps;
 import utils.ConfigReader;
+import utils.TestSessionInitiator;
 import utils.YamlReader;
 
-public class RegistrationTest extends ConfigReader{
+public class RegistrationTest{
 	
 	WebDriver driver;
-	ConfigReader config = new ConfigReader();
 	RegistrationPage registrationPage;
 	RegistrationSteps registrationSteps;
 	String yamlFilePath = System.getProperty("user.dir") + File.separator + "src/test/java/testdata/registration_form.yml";
-	
+	TestSessionInitiator test;
 	
 	
 @BeforeTest
 public void beforeTest() throws FileNotFoundException, IOException {
-
-	WebDriverManager.chromedriver().setup();
-	driver = new ChromeDriver();
-	
+	test = new TestSessionInitiator();
+	driver = test.getDriver();	
 	registrationSteps = new RegistrationSteps(driver);
 	registrationPage = new RegistrationPage(driver);
 	YamlReader.setYamlFilePath(yamlFilePath);
-	String url = config.getUrl();
-	driver.get(url);
+	driver.get(ConfigReader.getUrl());
 }
-
 
 @Test
 public void tc01_validateClearButton() {
@@ -79,8 +73,6 @@ public void tc04_validateSuccessMessageForValidForm() {
 	Assert.assertEquals(registrationPage.getAlertText(), 
 			YamlReader.getYamlValue("valid_registration_form_data.success_msg"));
 }
-
-
 
 @AfterTest
 public void afterTest() {
