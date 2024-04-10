@@ -39,9 +39,9 @@
 
 4. What is traceability matrix and what information does it contains?
 	A traceability matrix is a structured document that serves as a roadmap connecting various elements of a software project:
-	1. **Requirements**: The functionalities the software should have.
-	2. **Test Cases**: Scenarios designed to validate these requirements.
-	3. **Defects**: Any issues identified during testing.
+	1. Requirements: The functionalities the software should have.
+	2. Test Cases: Scenarios designed to validate these requirements.
+	3. Defects: Any issues identified during testing.
 	It aids in:
 	- Identifying which requirements are tested and which are not.
 	- Tracking the relationship between requirements and test cases.
